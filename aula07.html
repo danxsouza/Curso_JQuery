@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Entendendo o JQuery</title>
+        <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('tr:not(tr:eq(3))').css('backgroundColor', 'green');
+
+            });
+        </script>
+    </head>
+
+<body>
+<table border="1" cellpadding="5" cellspacing="0">
+    <tr>
+        <td>Nome</td>
+        <td>Idade</td>
+        <td>Endereço</td>
+    </tr>
+    <tr>
+        <td>Danilo Soua</td>
+        <td>25</td>
+        <td>Rua 10</td>
+    </tr>
+    <tr>
+        <td>Dunha da Silva</td>
+        <td>32</td>
+        <td>Rua Brasil</td>
+    </tr>
+    <tr>
+        <td>Dignirze</td>
+        <td>56</td>
+        <td>Rua Presidente Lula</td>
+    </tr>
+
+    <tr>
+        <td>Dilma Russef</td>
+        <td>56</td>
+        <td>Rua Melhor Presidenta</td>
+    </tr>
+
+    <tr>
+        <td>Partido dos Trabalhadores</td>
+        <td>89</td>
+        <td>Rua dos Trabalhadores</td>
+    </tr>
+
+</table>
+</body>
+<html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Entendendo o JQuery</title>
+    <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <style type="text/css">
+        .test{
+            border: 2px solid blue; padding: 5px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(':button').addClass('test');
+            $(':checkbox').addClass('test');
+            $(':file').addClass('test');
+            $(':checked').css('borderColor', 'orange');
+            $(':selected').css('backgroundColor', 'black');
+            $(':disabled').css('backgroundColor', 'pink');
+            
+            $(':button').click(function () {
+                var tipo = $('option:eq(2)').html();
+                alert(tipo);
+            })
+        });
+    </script>
+</head>
+
+<body>
+
+<br action="">
+Nome: <input type="text"> </br>
+Password: <input type="text" name=""> </br></br>
+Radio: <input type="radio" name="s">Masc
+<input type="radio" name="s">Fem </br></br>
+File: <input type="file"> </br> </br>
+Checks: <input type="checkbox" checked="checked"> A
+<input type="checkbox"> B
+<input type="checkbox"> C </br></br>
+
+Select: <select name="" id="">
+    <option value="">Brasil</option>
+    <option value="">Portugal</option>
+    <option value="">Russia</option>
+</select>
+
+</br></br>
+<textarea></textarea></br></br>
+<input type="submit" value="Submit">
+<input type="reset"  value="Reset">
+<input type="button" value="Button">
+
+</form>
+</body>
+<html>

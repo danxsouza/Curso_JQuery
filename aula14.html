@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Entendendo o JQuery</title>
+    <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <style type="text/css">
+        .test{
+            border: 2px solid blue; padding: 5px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(':button').click(function () {
+                // var texto = $('div').text();
+                // alert(texto);
+
+                $('div').replaceWith('<p>abc</p>');
+          })
+        });
+    </script>
+</head>
+
+<body>
+  <br>
+      O que é Lorem Ipsum?
+
+      Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica
+      e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido
+      pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.
+      Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a
+      editoração eletrônica, permanecendo essencialmente inalterado. </br>
+  </div>
+  </br>
+  <input type="button" value="Button">
+</body>
+<html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 03 - Hello World</title>
+    <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        // window.onload = function () {
+        //   document.getElementById('click').onclick=helloworld;
+        //}
+        //function helloworld() {
+        //    alert('Hello World');
+        // }
+        $(document).ready(function(){
+            $('a').click(function () {
+                alert('Hello World');
+            });
+        });
+    </script>
+</head>
+<body>
+    <a href="#" id="clique">Clique 1</a>
+    <a href="#" class="clickMe">Clique 2</a>
+
+</body>
+</html>

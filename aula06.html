@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 06 - Entendendo o jQuery</title>
+    <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+            $('a').click(function () {
+                
+                var valor = $('#txtText').css('backgroundColor', 'red').hide();
+                alert('valor');
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="div1">
+        <a href="#" class="x">Clique</a>
+    </div>
+    </br>
+    </br>
+
+    <fieldset>
+        <legend>Campo de Entrada de Dados</legend>
+        <label for="txtText">Digite alguma coisa: </label>
+        <input type="text" id="txtText" value="Digite aqui">
+    </fieldset>
+</body>
+</html>
