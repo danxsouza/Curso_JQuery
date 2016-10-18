@@ -9,30 +9,28 @@
             border: 2px solid blue; padding: 5px;
         }
     </style>
-
     <script type="text/javascript">
         $(document).ready(function() {
             $(':button').click(function () {
-                // var texto = $('div').text();
-                // alert(texto);
+            $('#div1').append($('span'));
 
-                $('div').replaceWith('<p>abc</p>');
-          })
+                var imagem = $('<img/>', {src: 'img/linux.bmp',
+                                                      border: 1,
+                                                      mouseover: function() {alert('HAHAHA')}});
+
+                $('div').append(imagem);
+
+          });
         });
     </script>
 </head>
-
 <body>
-  <br>
-      O que é Lorem Ipsum?
+<span> Danilo Souza</span>
 
-      Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica
-      e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido
-      pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.
-      Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a
-      editoração eletrônica, permanecendo essencialmente inalterado. </br>
-  </div>
-  </br>
-  <input type="button" value="Button">
+    <div id="div1" class="test"
+        <p id="paragrafo1">Teste</p>
+    </div>
+
+  <input type="button" value="Append">
 </body>
 <html>
