@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Entendendo o JQuery</title>
+    <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <style type="text/css">
+        .test{
+            border: 2px solid blue; padding: 5px;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(':button').click(function () {
+            $('#div1').append($('span'));
+
+                var imagem = $('<img/>', {src: 'img/linux.bmp',
+                                                      border: 1,
+                                                      });u
+
+               // $('div').append(imagem);
+                $('div').after(imagem);
+
+          });
+        });
+    </script>
+</head>
+<br>
+<span> Danilo Souza</span>
+
+    <div id="div1" class="test"
+        <p id="paragrafo1">Teste</p>
+    </div>
+</br>
+
+  <input type="button" value="Append">
+</body>
+<html>
