@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Entendendo o JQuery - Aula 17</title>
+    <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <style type="text/css">
+        .css {
+            padding: 30px;
+            margin: 20px;
+            border: 2px solid orangered;
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(':button').click(function () {
+            $('img').css('weight', '400px');
+           /* $('img').css({
+                width: '500px',
+                height: '150px',
+                border: '2px solid green'
+              }); */
+               $('img').addClass('css');
+            });
+        });
+    </script>
+</head>
+<br>
+<span> Danilo Souza</span>
+
+    <div id="div1" class="test">
+        <p id="paragrafo1">
+            <span>Teste</span>
+            <img src="img/paisagem.jpg">
+        </p>
+        <p id="paragrafo2">Teste 1</p>
+        <p id="paragrafo2">Teste 2</p>
+    </div>
+  <input type="button" value="Append">
+</body>
+<html>
